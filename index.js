@@ -19,16 +19,26 @@ var open = document.getElementById("open");
 var close = document.getElementById("close");
 
 function opennav() {
-  sidenav.style.position = "fixed";
-  sidenav.style.right = "0px";
-  open.style.display = "none";
-  close.style.display = "flex";
-  close.style.transition = "3s";
+  sidenav.classList.toggle("open");
+  // sidenav.style.position = "fixed";
+  // sidenav.style.right = "0px";
+  // open.style.display = "none";
+  // close.style.display = "flex";
+  // close.style.transition = "3s";
 }
+
 function closenav() {
-  sidenav.style.position = "fixed";
-  sidenav.style.right = "-250px";
-  open.style.display = "flex";
-  close.style.display = "none";
-  open.style.transition = "3s";
+  sidenav.classList.remove("open");
+  // sidenav.style.position = "fixed";
+  // sidenav.style.right = "-250px";
+  // open.style.display = "flex";
+  // close.style.display = "none";
+  // open.style.transition = "3s";
 }
+// document.addEventListener("click", () => {
+//   sidenav.style.position = "fixed";
+//   sidenav.style.right = "0px";
+//   // sidenav.style.display = "none"
+//   console.log("Hello");
+// });
+
