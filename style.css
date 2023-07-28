@@ -249,17 +249,20 @@ main a:hover {
   width: 400px;
 }
 .img-case {
-  height: 500px;
-  width: 500px;
+  /* height: 500px; */
+  max-width: 500px;
   display: flex;
   justify-content: center;
   border-radius: 100%;
-  /* width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 200px 200px 0 0;
-  border-color: #ff6b6b transparent transparent transparent; */
   background-color: rgb(190, 34, 34, 0.3);
+}
+@media screen and (max-width: 500px) {
+  .img-case{
+    width: 100%;
+  }
+  .img-case img{
+    width: 100%;
+  }
 }
 
 .div {
